@@ -13,8 +13,8 @@ var Company = function(companyName, revenue, isPublic) {
 
   // create a method called 'addEmployee' that requires all the parameters of the Employee constructor, creates a new employee by calling the Employee constructor, and pushes that new object instance to the this.employees array
 
-  this.addEmployee = function() {
-    this.employees.push(Employee);
+  this.addEmployee = function(firstName, jobTitle, salary, isActive) {
+    this.employees.push(Employee(firstName, jobTitle, salary, isActive));
   };
   // create a method that returns the number of employees currently working at the company
   this.numberOfEmployees = function() {

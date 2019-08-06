@@ -5,9 +5,7 @@ var Employee = function(firstName, jobTitle, salary, isActive) {
   this.firstName = firstName;
   this.jobTitle = jobTitle;
   this.salary = salary;
-  this.isActive = function() {
-    console.log(this.firstName + "is active");
-  };
+  this.isActive = isActive;
 };
 
 // export the employee constructor so that we can require it in our Company constructor
